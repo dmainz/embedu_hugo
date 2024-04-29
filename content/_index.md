@@ -12,14 +12,8 @@ Welcome to EmbeddedUniversity!
 ```math { align="left" }
 $$f(x) = \int_{0}^{\infty}e^{2 \pi i x}dx$$
 ```
-<table>
-<tr>
-<td> Dockerfile </td>
-</tr>
-<tr>
-<td>
 
-```docker
+```docker {title="Dockerfile"}
 FROM alpine
 RUN apk update
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
@@ -30,11 +24,7 @@ ENV HUGO_BIND=0.0.0.0 HUGO_DESTINATION=public HUGO_ENV=DEV HUGO_EDITION=extended
 ENTRYPOINT [ "hugo" ]
 ```
 
-</td>
-</tr>
-</table>
-
-```bash
+```bash {title="Run the container"}
 docker run --rm -p 1313:1313 -v $(pwd):/home/data hugo server -D --gc --bind=0.0.0.0
 ```
 

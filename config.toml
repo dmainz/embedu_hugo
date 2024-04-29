@@ -11,4 +11,4 @@ theme = "relearn"
   showVisitedLinks = true
   
 [markup.goldmark.renderer]
-  unsafe = true # Allow HTML in md files
+  unsafe = flase # Don't allow HTML in md files
