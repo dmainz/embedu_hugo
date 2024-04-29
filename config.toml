@@ -6,4 +6,9 @@ enableEmoji = true
 
 # Theme Settings
 theme = "relearn"
-
+[params]
+  collapsibleMenu = true
+  showVisitedLinks = true
+  
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
