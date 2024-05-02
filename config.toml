@@ -6,9 +6,8 @@ enableEmoji = true
 
 # Theme Settings
 theme = "relearn"
+
 [params]
   collapsibleMenu = true
   showVisitedLinks = true
-  
-[markup.goldmark.renderer]
-  unsafe = flase # Don't allow HTML in md files
+  themeVariant='my-custom-variant'
